@@ -1,12 +1,12 @@
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-.zerodha-logo img {
-    width: 120px;
-    height: 16px;
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
 }
 
 .navbar {
@@ -16,13 +16,44 @@
     display: flex;
     align-items: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
 }
 
-.navbar .navbar-tools a{
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.zerodha-logo img {
+    width: 135px;
+    height: auto;
+}
+
+.navbar-tools {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar-tools a {
     text-decoration: none;
-    color: #444444;
-    margin: 0 15px;
+    color: #444;
     font-size: 14.4px;
-    font-weight: 600px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.navbar-tools a:hover {
+    color: #387ed1;
+}
+
+body {
+    padding-top: 80px;
 }
