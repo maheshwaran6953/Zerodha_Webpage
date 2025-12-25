@@ -1,0 +1,58 @@
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+
+# OS files (Windows)
+Thumbs.db
+
+# Build files
+dist/
+build/
+
+# Dependencies
+*.log
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# For HTML/CSS/JS projects
+*.log
+.cache/
+coverage/
+
+# Editor/IDE specific
+*.swp
+*.swo
+*~
+
+# macOS
+.DS_Store
+._*
+
+# Windows
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.fuse_hidden*
+
+# Temporary files
+*.tmp
+*.temp
+
+# Optional: if you're using parcel/webpack
+.cache
+.parcel-cache
