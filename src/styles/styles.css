@@ -1,59 +1,60 @@
+/*overall styles*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/*html styles*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*body styles*/
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
 }
 
+/*navbar styles*/
+
 .navbar {
-    width: 100%;
-    height: 80px;
     background-color: #fff;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     display: flex;
-    align-items: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    top: 0;
-    z-index: 1000;
 }
 
-.container {
+.navbar .container {
+    width: 90%;
+    height: 70px;
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    padding: 10px 0;
+    font-size: 15px;
 }
 
 .zerodha-logo img {
-    width: 135px;
-    height: auto;
+    width: 140px;
+    height: 17.7px;
 }
 
-.navbar-tools {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.navbar-tools a {
+.navbar-tools a{
     text-decoration: none;
-    color: #444;
-    font-size: 14.4px;
-    font-weight: 600;
-    transition: color 0.3s ease;
+    color: rgb(104, 103, 103);
+    margin: 20px;
 }
 
 .navbar-tools a:hover {
-    color: #387ed1;
+    color: #008cff;
+    transition: all 0.3s ease;
 }
 
-body {
-    padding-top: 80px;
+.hamburger-menu {
+    font-size: 24px;
+    cursor: pointer;
 }
