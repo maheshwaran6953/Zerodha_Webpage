@@ -35,7 +35,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 0;
-    font-size: 15px;
+    font-size: 17px;
 }
 
 .zerodha-logo img {
@@ -57,4 +57,47 @@ body {
 .hamburger-menu {
     font-size: 24px;
     cursor: pointer;
+}
+
+/*landing section styles*/
+
+.landing .container{
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.landing .container .landing-image {
+    width: 100%;
+    max-width: 700px;
+    display: block;
+    margin: 4% auto 20px auto;
+}
+
+.landing .container .landing-heading {
+    text-align: center;
+    color: #515050;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.landing .container .landing-subheading {
+    text-align: center;
+    color: #6c6b6b;
+    font-size: 19px;
+    margin: 15px 0 35px 0;
+}
+
+.landing .container .button {
+    background-color: #008cff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.landing .container .button:hover {
+    background-color: #007acc;
+    transition: all 0.3s ease;
 }
