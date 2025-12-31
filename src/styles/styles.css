@@ -63,7 +63,7 @@ body {
 
 .landing .container{
     text-align: center;
-    padding: 30px 20px;
+    padding: 25px 20px;
 }
 
 .landing .container .landing-image {
@@ -100,4 +100,80 @@ body {
 .landing .container .button:hover {
     background-color: #007acc;
     transition: all 0.3s ease;
+}
+
+/*hamburger menu styles*/
+
+.hamburger-menu-container {
+    background-color: #fefafe;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 60vh;
+    z-index: 999;
+    margin: 70px 85px;
+    display: none;
+}
+
+.hamburger-menu-container .products-container{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #fff;
+    height: fit-content;
+}
+
+.hamburger-menu-container .products-container h3 {
+    font-size: 14px;
+    color: #515050;
+}
+
+.hamburger-menu-container .container p {
+    font-size: 13px;
+    color: #8f8e8e;
+}
+
+.hamburger-menu-container .menu-footer{
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    margin: 5vh 0 0 0;
+    padding: 20px 0px;
+}
+
+.hamburger-menu-container .menu-footer p {
+    font-size: 18px;
+    color: #515050;
+    margin-bottom: 10px;
+}
+
+.hamburger-menu-container .menu-footer a {
+    display: block;
+    font-size: 16px;
+    color: #8f8e8e;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.hamburger-menu-container .menu-footer a:hover {
+    color: #008cff;
+    transition: all 0.3s ease;
+}
+
+.hamburger-menu-container .education .three-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0px 10px;
+    gap: 40px;
+}
+
+.hamburger-menu-container .education .three-links span {
+    font-size: 16px;
+    color: rgb(74, 68, 68);
+    cursor: pointer;
 }
