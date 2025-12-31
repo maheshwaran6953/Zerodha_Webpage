@@ -54,12 +54,20 @@ body {
     transition: all 0.3s ease;
 }
 
-.hamburger-menu {
+.hamburger-menu-button {
     font-size: 24px;
     cursor: pointer;
+    background: none;
+    border: none;
+    color: rgb(104, 103, 103);
 }
 
 /*landing section styles*/
+
+.main-content {
+    position: relative;
+    z-index: 1;
+}
 
 .landing .container{
     text-align: center;
@@ -113,8 +121,15 @@ body {
     width: 60%;
     height: 60vh;
     z-index: 999;
-    margin: 70px 85px;
+    margin: 70px 70px;
     display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.hamburger-menu-container.active {
+    display: block;
+    opacity: 1;
 }
 
 .hamburger-menu-container .products-container{
@@ -131,9 +146,14 @@ body {
     color: #515050;
 }
 
-.hamburger-menu-container .container p {
+.hamburger-menu-container .products-container p {
     font-size: 13px;
     color: #8f8e8e;
+}
+
+.hamburger-menu-container .products-container div:hover {
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .hamburger-menu-container .menu-footer{
